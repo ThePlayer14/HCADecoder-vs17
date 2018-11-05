@@ -3,28 +3,35 @@
 # How to decode HCA file
 
   Drag and drop a HCA file to HCADecoder.exe, you can create a WAVE file with the same file name.
+  
   It supports decoding of multiple files.
   The decode option remains at the default value.
 
-  Specifying decoding options
+  *Specifying decoding options*
   Drag and drop a HCA file to the option specification Batch_Decode.bat.
+  
   It also supports decode of multiple files.
 
 
 # Decryption method of HCA file
 
   Drag and drop a HCA file to Decode.bat, and the HCA file will be decrypted.
-  Please be careful as the original files will be overwritten.
+  **Please be careful as the original files will be overwritten.**
+  
   It supports decryption of multiple files.
 
 
 # Specification
 
-  The default decode option is
-    Volume = 1 (times)
-    Bit mode = 16 (bits)
-    Loop count = 0 (times)
-    Decryption key = CC55463930DBE1AB *Key used in PSO2
+ The default decode option is:
+  
+  * Volume = 1 (times)
+  
+  * Bit mode = 16 (bits)
+  
+  * Loop count = 0 (times)
+  
+  * Decryption key = CC55463930DBE1AB *Key used in PSO2
 
   If loop information is included in the HCA file, a smpl chunk is added to the WAVE file.
   However, when the number of loops of the decode option is 1 or more, output as direct waveform data without adding the smpl chunk.
@@ -57,7 +64,7 @@
   The file can not be opened and an error appears.
 
 
-Disclaimer
+# Disclaimer
 
   The author does not take any responsibility for any damage caused by using this application.
   Please use it on your own responsibility.
@@ -65,8 +72,7 @@ Disclaimer
 
 # Other
 
-  Since there is a trace of that VBR is removed from HCA v2.0,
-  Maybe only CBR exists from the beginning.
+  Since there is a trace of that VBR is removed from HCA v2.0, maybe only CBR exists from the beginning.
 
   There was a trace that ATH table also existed only in Type 0 (Keyless Encryption).
 
