@@ -7,18 +7,21 @@
   It supports decoding of multiple files.
   The decode option remains at the default value.
 
+
   *Specifying decoding options*
+  
   Drag and drop a HCA file to the option specification Batch_Decode.bat.
   
-  It also supports decode of multiple files.
+  The batch file also supports decode of multiple files.
 
 
 # Decryption method of HCA file
 
   Drag and drop a HCA file to Decode.bat, and the HCA file will be decrypted.
+  
   **Please be careful as the original files will be overwritten.**
   
-  It supports decryption of multiple files.
+  The batch file supports decryption of multiple files.
 
 
 # Specification
@@ -51,16 +54,18 @@
   This is to make it easy to modify the header.
   Even if the header is really corrupt it will not result in an error.
 
-  The key used in the encryption table varies depending on the game. *Some developer companies may use the same key.
+  The key used in the encryption table varies depending on the game. *Some developer companies may use the same key.*
+  
   When the type of the encryption table is 0x38 (Keyed Encryption), and you don't use the correct key, the output waveform will be incorrect.
 
   Decrypting with decryption key specified
-  It is easy to open the option specification Batch_Decode.bat with a text editor and change the decryption key of the default value setting.
+  
+  Open the batch file Batch_Decode.bat with a text editor and change the decryption key of the default value setting.
 
   It corresponds to CBR only. VBR fails to decode. *There is a chance that VBR does not exist.
 
-  In the specification of the command prompt, the file path (file name and folder name) including & is
-  When dragging and dropping it to a batch file such as option specification Decode.bat or decode.bat
+  In the command prompt, the file path (file name and folder name) including & is
+  When dragging and dropping it to a batch file such as option specification Decode.bat
   The file can not be opened and an error appears.
 
 
